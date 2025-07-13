@@ -30,7 +30,8 @@ st.title("🌧 Weather Precipitation Classification Dashboard")
 st.markdown("Built using **KNN**, **Naive Bayes**, **Decision Tree**, and **SVM** models.")
 
 # Load & preprocess data
-weather_data = pd.read_csv("C:/Users/vishn/Desktop/weatherHistory.csv")
+# weather_data = pd.read_csv("C:/Users/vishn/Desktop/weatherHistory.csv")
+weather_data = pd.read_csv("https://raw.githubusercontent.com/Vishnunandan24/Weather-Precipitation-Classification/main/weatherHistory.csv")
 weather_data = weather_data[["Precip Type", "Temperature (C)", "Humidity", "Wind Speed (km/h)"]]
 weather_data["Precip Type"] = weather_data["Precip Type"].replace(["null", "NULL", "Null", ""], "No Precipitation").fillna("No Precipitation")
 weather_data.drop_duplicates(inplace=True)

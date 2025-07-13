@@ -30,7 +30,7 @@ logging.basicConfig(level=logging.INFO)
 logging.info("Starting Weather Precipitation ML training...")
 
 # Load and preprocess dataset
-weather_data = pd.read_csv("C:/Users/vishn/Desktop/weatherHistory.csv")
+weather_data = pd.read_csv("https://raw.githubusercontent.com/Vishnunandan24/Weather-Precipitation-Classification/main/weatherHistory.csv")
 weather_data = weather_data[["Precip Type", "Temperature (C)", "Humidity", "Wind Speed (km/h)"]]
 weather_data["Precip Type"] = weather_data["Precip Type"].replace(["null", "NULL", "Null", ""], "No Precipitation").fillna("No Precipitation")
 weather_data.drop_duplicates(inplace=True)
@@ -57,7 +57,7 @@ def train_and_save(model, name):
     acc = accuracy_score(y_test, predictions)
     cm = confusion_matrix(y_test, predictions)
     logging.info(f"{name} Accuracy: {acc * 100:.2f}%")
-    print(f"\n{name} Classification Report:\n", classification_report(y_test, predictions,zero_division=))
+    print(f"\n{name} Classification Report:\n", classification_report(y_test, predictions,zero_division=1))
     joblib.dump(model, f"{name.lower().replace(' ', '_')}_model.pkl")
 
 models = {
