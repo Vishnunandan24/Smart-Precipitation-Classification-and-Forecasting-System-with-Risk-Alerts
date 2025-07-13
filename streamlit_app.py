@@ -1,7 +1,7 @@
 # streamlit_app.py
 
 """
-Weather Precipitation Dashboard using Streamlit
+Weather Precipitation Classification Dashboard using Streamlit
 ------------------------------------------------
 Interactive visualization for:
 - EDA

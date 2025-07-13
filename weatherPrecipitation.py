@@ -27,7 +27,7 @@ from sklearn.svm import SVC
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
-logging.info("🚀 Starting Weather Precipitation ML training...")
+logging.info("Starting Weather Precipitation ML training...")
 
 # Load and preprocess dataset
 weather_data = pd.read_csv("C:/Users/vishn/Desktop/weatherHistory.csv")
@@ -57,7 +57,7 @@ def train_and_save(model, name):
     acc = accuracy_score(y_test, predictions)
     cm = confusion_matrix(y_test, predictions)
     logging.info(f"{name} Accuracy: {acc * 100:.2f}%")
-    print(f"\n{name} Classification Report:\n", classification_report(y_test, predictions,zero_division=1))
+    print(f"\n{name} Classification Report:\n", classification_report(y_test, predictions,zero_division=))
     joblib.dump(model, f"{name.lower().replace(' ', '_')}_model.pkl")
 
 models = {
@@ -75,7 +75,7 @@ def sensor_data_stream(df):
     for i in range(len(df)):
         yield df.iloc[i:i+1]
 
-logging.info("⏱️ Simulating Real-Time Predictions (First 5 Samples)...")
+logging.info("Simulating Real-Time Predictions (First 5 Samples)...")
 stream = sensor_data_stream(X_test)
 model = models["KNN"]  # Pick any trained model
 
@@ -85,4 +85,4 @@ for i, row in enumerate(stream):
     if i == 4:
         break
 
-logging.info("✅ Training and saving complete. Streamlit dashboard will handle visualizations.")
+logging.info("Training and saving complete. Streamlit dashboard will handle visualizations.")
