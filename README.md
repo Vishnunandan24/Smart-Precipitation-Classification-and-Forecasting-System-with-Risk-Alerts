@@ -214,7 +214,7 @@ streamlit run streamlit_app.py
 
 <div align="center">
 
-### 📸 *Dashboard Screenshots*
+### 📸 *Dashboard Overview*
 
 | 📊 *EDA Section* | 🎯 *Model Comparison* | 🌲 *Decision Tree* |
 |:---:|:---:|:---:|
