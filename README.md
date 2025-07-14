@@ -86,7 +86,7 @@
 
 
 🌈 STREAMLIT DASHBOARD SECTIONS
-
+```
 ├── *1.📊 Exploratory Data Analysis*<br>
         └── 📈 Distribution plots<br>
         └── 📦 Outlier detection<br>
@@ -99,7 +99,7 @@
 ├── *3.⚡ Real-Time Sensor Feed*<br>
         └── 📡 Live data simulation<br>
         └── 🔮 Instant predictions<br>
-
+```
 
 </div>
 
