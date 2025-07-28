@@ -141,7 +141,7 @@ graph TB
     <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Open in Streamlit"/>
   </a>
 </div>
-🌐 Live Demo URL: https://m9tqu6hvyyjrub5mesbqrl.streamlit.app/
+🌐 Live Demo URL: https://e2jsej5mcfzgxdxnzazovz.streamlit.app/
 
 </div>
 
