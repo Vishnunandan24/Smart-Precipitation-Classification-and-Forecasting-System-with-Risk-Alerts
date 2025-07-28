@@ -1,265 +1,473 @@
 <div align="center">
 
-# 🌦 Weather Precipitation Classification Dashboard
-
+# 🌦️ Smart Precipitation Classification & Forecasting System
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit"/>
-  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn"/>
-  <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
-    <img src="https://img.shields.io/badge/numpy-150458?style=for-the-badge&logo=numpy&logoColor=white" alt="Numpy"/>
-      <img src="https://img.shields.io/badge/matplotlib-150458?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib"/>
-        <img src="https://img.shields.io/badge/seaborn-150458?style=for-the-badge&logo=seaborn&logoColor=white" alt="Seaborn"/>
-
-
-
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=2B5B84"/>
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white&labelColor=C73E1D"/>
+  <img src="https://img.shields.io/badge/Machine_Learning-00D2FF?style=for-the-badge&logo=tensorflow&logoColor=white&labelColor=0099CC"/>
+  <img src="https://img.shields.io/badge/Time_Series-FF6B6B?style=for-the-badge&logo=chartdotjs&logoColor=white&labelColor=CC5555"/>
+  <img src="https://img.shields.io/badge/Status-Production_Ready-00C851?style=for-the-badge&logo=checkmarx&logoColor=white&labelColor=009639"/>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Accuracy-98.8%25-brightgreen?style=flat-square&logo=target" alt="Accuracy"/>
-  <img src="https://img.shields.io/badge/Models-4-blue?style=flat-square&logo=brain" alt="Models"/>
+  <img src="https://img.shields.io/github/stars/Vishnunandan24/weather-precipitation-classification?style=flat-square&color=yellow"/>
+  <img src="https://img.shields.io/github/forks/Vishnunandan24/weather-precipitation-classification?style=flat-square&color=green"/>
+  <img src="https://img.shields.io/github/issues/Vishnunandan24/weather-precipitation-classification?style=flat-square&color=red"/>
 </p>
 
 ---
 
-## 🌟 *Project Overview*
+## 🎯 Project Vision
 
-> *Turn raw weather data into intelligent predictions!* This cutting-edge dashboard harnesses the power of machine learning to classify weather precipitation patterns with stunning accuracy. Built for the modern data scientist who demands both performance and visual appeal.
+Transform weather data into **actionable intelligence** through advanced machine learning algorithms. This comprehensive system bridges the gap between raw meteorological data and real-world decision-making by providing accurate precipitation classification and humidity forecasting with intelligent risk assessment.
 
-<table align="center">
-<tr>
-<td align="center">🎯</td>
-<td><strong>Mission</strong></td>
-<td>Predict Rain, Snow, or No Precipitation with 98.88% accuracy</td>
-</tr>
-<tr>
-<td align="center">🚀</td>
-<td><strong>Technology</strong></td>
-<td>4 ML algorithms competing for supremacy</td>
-</tr>
-<tr>
-<td align="center">⚡</td>
-<td><strong>Experience</strong></td>
-<td>Real-time predictions with interactive visualization</td>
-</tr>
-</table>
+> **🚀 Mission**: Democratize weather intelligence for smart cities, agriculture, and climate-resilient infrastructure
 
 </div>
 
 ---
 
-## 🎮 *Interactive Features*
+## 📋 Table of Contents
 
-<div align="center">
-
-| 🎨 *Visual Analytics* | 🧠 *Smart Predictions* | 📊 *Real-Time Data* |
-|:---:|:---:|:---:|
-| Beautiful EDA plots | 4 ML models comparison | Live sensor simulation |
-| Confusion matrix heatmaps | Classification reports | Streaming predictions |
-| Decision tree visualization | Accuracy metrics | Interactive dashboard |
-
-</div>
-
----
-
-## 🔥 *The ML Arsenal*
-
-<div align="center">
-
-### 🏆 *Model Performance Leaderboard*
-
-| Rank | 🤖 Algorithm | 🎯 Accuracy | 🏅 Status | 🔧 Specialty |
-|:---:|:---:|:---:|:---:|:---:|
-| 🥇 | *SVM* | *98.88%* | 👑 *Champion* | Linear separation master |
-| 🥈 | *Decision Tree* | *98.83%* | 🌟 *Excellent* | Interpretable decisions |
-| 🥉 | *KNN* | *98.58%* | 💪 *Strong* | Neighborhood wisdom |
-| 4️⃣ | *Naive Bayes* | *95.86%* | ⚡ *Fast* | Probabilistic genius |
-
-</div>
+- [🌟 Key Features](#-key-features)
+- [🔧 Technology Stack](#-technology-stack)
+- [📊 System Architecture](#-system-architecture)
+- [🎪 Live Demo](#-live-demo)
+- [⚡ Quick Start Guide](#-quick-start-guide)
+- [📈 Model Performance](#-model-performance)
+- [🔮 Forecasting Engine](#-forecasting-engine)
+- [🚨 Alert System](#-alert-system)
+- [📱 User Interface](#-user-interface)
+- [🧪 Technical Implementation](#-technical-implementation)
+- [🌍 Real-World Applications](#-real-world-applications)
+- [👨‍💻 Author](#-author)
 
 ---
 
-## 🎨 *Dashboard Experience*
-
-<div align="center">
-
-
-🌈 STREAMLIT DASHBOARD SECTIONS
-```
-├── *1.📊 Exploratory Data Analysis*<br>
-        └── 📈 Distribution plots<br>
-        └── 📦 Outlier detection<br>
-        └── 🔥 Correlation heatmap<br>
-├── *2.🎯 Model Performance Arena*<br>
-        └── 🏆 Accuracy comparison<br>
-        └── 📋 Classification reports<br>
-        └── 🎭 Confusion matrices<br>
-        └── 🌲 Decision Tree Visualization <br>
-├── *3.⚡ Real-Time Sensor Feed*<br>
-        └── 📡 Live data simulation<br>
-        └── 🔮 Instant predictions<br>
-```
-
-</div>
-
----
-
-## 🛠 *Tech Stack Power*
-
-<div align="center">
-
-### 🎯 *Core Technologies*
+## 🌟 Key Features
 
 <table>
 <tr>
-<td align="center">
-<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40" height="40"/>
-<br><strong>Python</strong><br>Core language
+<td width="50%">
+
+### 🧠 **Intelligent Classification**
+- **98.92% Accuracy** with Decision Tree algorithm
+- Multi-class precipitation detection
+- Real-time confidence scoring
+- Robust outlier handling
+
+### 📈 **Advanced Forecasting**
+- ARIMA-based humidity prediction
+- 3-day forecast horizon
+- Trend analysis & visualization
+
 </td>
-<td align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" width="40" height="40"/>
-<br><strong>Matplotlib</strong><br>Visualization
-</td>
-<td align="center">
-<img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" width="40" height="40"/>
-<br><strong>Seaborn</strong><br>Statistical plots
-</td>
-<td align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" width="40" height="40"/>
-<br><strong>Scikit-Learn</strong><br>ML algorithms
-</td>
-</tr>
-<tr>
-<td align="center">
-<img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" width="40" height="40"/>
-<br><strong>Pandas</strong><br>Data manipulation
-</td>
-<td align="center">
-<img src="https://streamlit.io/images/brand/streamlit-mark-color.svg" width="40" height="40"/>
-<br><strong>Streamlit</strong><br>Web framework
-</td>
-<td align="center">
-<img src="https://numpy.org/images/logo.svg" width="40" height="40"/>
-<br><strong>NumPy</strong><br>Numerical computing
-</td>
-<td align="center">
-<img src="https://joblib.readthedocs.io/en/latest/_static/joblib_logo.svg" width="40" height="40"/>
-<br><strong>Joblib</strong><br>Model persistence
+<td width="50%">
+
+### 🚨 **Smart Alert System**
+- Risk-based notification engine
+- Probability threshold management
+- Multi-level alert categories
+- Customizable warning triggers
+
+### ⚡ **Real-Time Simulation**
+- Streaming data processing
+- Interactive visualizations
+- Performance monitoring
+
 </td>
 </tr>
 </table>
 
+---
+
+## 🔧 Technology Stack
+
+<div align="center">
+
+### Core Technologies
+
+| Category | Technologies |
+|----------|-------------|
+| **🧠 Machine Learning** | ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) |
+| **📊 Visualization** | ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat-square&logo=matplotlib&logoColor=black) ![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=flat-square&logo=seaborn&logoColor=black) ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white) |
+| **🌐 Web Framework** | ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white) |
+| **📈 Time Series** | ![Statsmodels](https://img.shields.io/badge/Statsmodels-8CAAE6?style=flat-square&logo=scipy&logoColor=white) |
+| **☁️ Deployment** | ![Streamlit Cloud](https://img.shields.io/badge/Streamlit_Cloud-FF4B4B?style=flat-square&logo=streamlit&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) |
+
 </div>
 
 ---
 
-# Clone the magic ✨
-git clone https://github.com/Vishnunandan24/weather-precipitation-classification.git
+## 📊 System Architecture
 
+```mermaid
+graph TB
+    A[🌦️ Weather Data Input] --> B[🔧 Data Preprocessing]
+    B --> C[📊 Exploratory Data Analysis]
+    C --> D[⚙️ Feature Engineering]
+    D --> E[🧠 Model Training Pipeline]
+    
+    E --> F[🎯 SVM Classifier]
+    E --> G[🌲 Decision Tree]
+    E --> H[👥 K-Nearest Neighbors]
+    E --> I[📊 Naive Bayes]
+    
+    F --> J[🏆 Model Selection & Evaluation]
+    G --> J
+    H --> J
+    I --> J
+    
+    J --> K[🔮 ARIMA Forecasting]
+    J --> L[🚨 Alert Generation]
+    K --> M[📱 Streamlit Dashboard]
+    L --> M
+    
+    M --> N[👤 End User Interface]
+    
+    style A fill:#e1f5fe
+    style N fill:#f3e5f5
+    style J fill:#fff3e0
+```
 
-# Install dependencies 📦
+---
+
+🎪 Live Demo
+<div align="center">
+🌐 Experience the System Live
+<div align="center">
+  <a href="https://m9tqu6hvyyjrub5mesbqrl.streamlit.app/" target="_blank">
+    <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Open in Streamlit"/>
+  </a>
+</div>
+🌐 Live Demo URL: https://m9tqu6hvyyjrub5mesbqrl.streamlit.app/
+
+</div>
+
+---
+
+## ⚡ Quick Start Guide
+
+<details>
+<summary><b>🚀 Click to expand installation steps</b></summary>
+
+### 1️⃣ Prerequisites
+```bash
+# Ensure Python is installed
+python --version
+```
+
+### 2️⃣ Clone Repository
+```bash
+git clone https://github.com/Vishnunandan24/Smart-Precipitation-Classification-and-Forecasting-System-with-Risk-Alerts.git
+cd Smart-Precipitation-Classification-and-Forecasting-System-with-Risk-Alerts.git
+```
+
+### 4️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
-# Launch the dashboard 🚀
-streamlit run streamlit_app.py
+### 5️⃣ Launch Application
+```bash
+streamlit run app.py
+```
+
+### 6️⃣ Access Dashboard
+Open your browser and navigate to: `http://localhost:8501`
+
+</details>
+
+---
+
+## 📈 Model Performance
+
+<div align="center">
+
+### 🏆 Algorithm Comparison
+
+| 🥇 Rank | Algorithm | Accuracy |
+|---------|-----------|----------|
+| **🥇** | **Decision Tree** | **98.92%** |
+| 🥈 | Support Vector Machine | 98.83% |
+| 🥉 | K-Nearest Neighbors | 97.94% |
+| 4️⃣ | Naive Bayes | 92.94% |
 
 
-### 🌐 *Or Access Live Demo*
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-link.streamlit.app)
+### 🎯 Classification Report of Decision Tree Algorithm
+```
+                precision    recall  f1-score   support
+
+    No Precipitation   0.06      0.07      0.07       104
+              Rain     0.99      0.99      0.99       16470
+              Snow     1.00      1.00      1.00       2017
+    
+         accuracy                          0.99      18591
+        macro avg      0.69      0.69      0.69      18591
+     weighted avg      0.99      0.99      0.99      18591
+```
 
 </div>
 
 ---
 
-## 🎯 *Key Insights & Features*
+## 🔮 Forecasting Engine
 
 <div align="center">
 
-### 🔍 *What Makes This Special?*
-
-| 💡 *Innovation* | 📝 *Description* | 🎯 *Impact* |
-|:---:|:---:|:---:|
-| 🔄 *Real-Time Simulation* | Live weather sensor data stream | Mimics production environment |
-| 🏆 *Model Tournament* | 4 algorithms compete head-to-head | Find the best performer |
-| 🎨 *Interactive Visualizations* | Beautiful plots and heatmaps | Understand data patterns |
-| ⚡ *Instant Predictions* | Click and get results immediately | User-friendly experience |
-| 📊 *Comprehensive EDA* | Deep dive into data insights | Data-driven decisions |
+### 📈 ARIMA Time Series Modeling
 
 </div>
 
----
+Our forecasting system utilizes **ARIMA (AutoRegressive Integrated Moving Average)** to predict humidity :
 
-## 📈 *Performance Metrics*
+#### 🔬 **Technical Specifications**
+- **Model Type**: ARIMA(p,d,q) with automated parameter selection
+- **Forecast Horizon**: 3-day rolling predictions
+- **Confidence Intervals**: 95% statistical confidence bounds
+- **Update Frequency**: Real-time with each new data point (used 1st 5 samples) 
+
+## 🚨 Alert System
 
 <div align="center">
 
-### 🎯 *Accuracy Breakdown*
-
-📊 MODEL PERFORMANCE SUMMARY
-
-🥇 SVM (Linear)           ████████████████████████████████████████ 98.88% <br>
-🥈 Decision Tree          ████████████████████████████████████████ 98.83% <br>
-🥉 KNN                    ████████████████████████████████████████ 98.58% <br>
-🏅 Naive Bayes            ████████████████████████████████████████ 95.86% <br>
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
+### ⚡ Intelligent Risk Assessment Engine
 
 </div>
 
+Our AI-powered alert system provides **contextual warnings** based on prediction confidence and weather severity:
+
+#### 🎚️ **Alert Categories**
+
+<table>
+<tr>
+<td width="25%" align="center">
+
+### 🚨 **CRITICAL**
+**Rain + 90%+ Confidence**
+- Rainfall alert - stay safe
+
+
+</td>
+<td width="25%" align="center">
+
+### ⚠️ **HIGH**
+**Snow or Rain + 80%+ Confidence**
+- Snowfall Expected
+
+
+</td>
+<td width="25%" align="center">
+
+### ✅ **LOW**
+**No Precipitation + 80%+ Confidence**
+- Safe conditions
+- Normal operations
+- Clear weather expected
+
+</td>
+</tr>
+</table>
+
+#### 🧠 **Smart Alert Logic**
+```python
+def generate_intelligent_alert(prediction, probability, humidity_trend):
+    """
+    Multi-factor alert generation considering:
+    - Precipitation type and probability
+    - Humidity trend analysis
+    - Historical risk patterns
+    - Seasonal adjustments
+    """
+    if prediction == "Rain" and probability > 0.90:
+        if humidity_trend > 80:
+        return "🚨 HIGH RISK: Rainfall Alert - Stay Safe"
+    
+    elif prediction == "Snow" and probability > 0.85:
+        return "❄️ WINTER ALERT: Snowfall Expected - Travel Caution"
+    
+    elif prediction == "No Precipitation" and probability > 0.80:
+        return "✅ CLEAR SKIES: Safe Weather Conditions"
+    
+    else:
+        return "🔍 UNCERTAIN: Monitor Weather Closely"
+```
+
 ---
 
-## 🎨 *Visual Gallery*
+## 📱 User Interface
 
 <div align="center">
 
-### 📸 *Dashboard Overview*
-
-| 📊 *EDA Section* | 🎯 *Model Comparison* | 🌲 *Decision Tree* |
-|:---:|:---:|:---:|
-| Beautiful data visualizations | Performance metrics | Interactive tree plot |
-| Correlation heatmaps | Confusion matrices | Model interpretability |
-| Distribution analysis | Accuracy comparison | Decision boundaries |
+### 🎨 Interactive Streamlit Dashboard
 
 </div>
 
+Our user-friendly interface provides comprehensive weather intelligence through multiple interactive sections:
+
+#### 🏠 **Dashboard Sections**
+
+<table>
+<tr>
+<td width="33%" align="center">
+
+### 📊 **Analytics Hub**
+- Correlation heatmaps
+- Distribution analysis
+- Outlier detection
+- Feature importance
+
+</td>
+<td width="33%" align="center">
+
+### 🔮 **Prediction Center**
+- Real-time classification
+- Confidence scoring
+- Model comparison
+- Performance metrics
+
+</td>
+<td width="33%" align="center">
+
+### 📈 **Forecast Studio**
+- ARIMA predictions
+- Trend visualization
+- Confidence intervals
+
+</td>
+</tr>
+</table>
+
+#### 🎛️ **Interactive Controls**
+- **Model Selection**: Choose between SVM, Decision Tree, KNN, or Naive Bayes
+- **Alert Sensitivity**: Customize warning thresholds
+- **Visualization Options**: Toggle between different chart types
+
 ---
 
-## 🏆 *Why This Project Rocks*
+## 🧪 Technical Implementation
+
+<details>
+<summary><b>🔬 Advanced Technical Details</b></summary>
+
+### ⚙️ **Feature Engineering Pipeline**
+
+```python
+def create_weather_features(df):
+    """
+    Advanced feature engineering for weather prediction
+    """
+    # Rolling statistics
+    df['humidity_ma_7'] = df['humidity'].rolling(window=7).mean()
+    df['humidity_std_7'] = df['humidity'].rolling(window=7).std()
+    
+    # Lag features
+    df['humidity_lag_1'] = df['humidity'].shift(1)
+    df['humidity_lag_3'] = df['humidity'].shift(3)
+    
+    # Interaction features
+    df['temp_humidity_interaction'] = df['temperature'] * df['humidity']
+    df['pressure_humidity_ratio'] = df['pressure'] / df['humidity']
+    
+    # Seasonal decomposition
+    decomposition = seasonal_decompose(df['humidity'], model='additive')
+    df['humidity_trend'] = decomposition.trend
+    df['humidity_seasonal'] = decomposition.seasonal
+    
+    return df
+```
+</details>
+
+---
+
+## 🌍 Real-World Applications
 
 <div align="center">
 
-### 💎 *Unique Value Proposition*
-
-- 🎯 *98.8% Accuracy* - Industry-leading performance
-- ⚡ *Real-Time Ready* - Production-grade simulation
-- 🎨 *Beautiful UI/UX* - Streamlit-powered elegance
-- 🔬 *Scientific Approach* - Proper EDA and evaluation
-- 🚀 *Scalable Design* - Ready for enterprise deployment
+### 🎯 Industry Impact & Use Cases
 
 </div>
 
----
+<table>
+<tr>
+<td width="50%">
 
-## 👨‍💻 *About the Creator*
+#### 🌾 **Smart Agriculture**
+- **Irrigation Optimization**: Predict humidity to schedule efficient watering
+- **Crop Protection**: Early frost and precipitation warnings
+- **Yield Forecasting**: Weather-based crop yield predictions
+- **Pest Management**: Weather-driven pest outbreak alerts
+
+#### 🏙️ **Smart Cities**
+- **Traffic Management**: Weather-based traffic flow optimization
+- **Emergency Response**: Proactive disaster preparedness
+- **Energy Grid**: Weather-informed energy demand forecasting
+- **Public Safety**: Citizens weather alert system
+
+</td>
+<td width="50%">
+
+#### 🚛 **Logistics & Transportation**
+- **Route Planning**: Weather-aware delivery optimization
+- **Fleet Management**: Vehicle maintenance scheduling
+- **Supply Chain**: Weather impact on logistics networks
+- **Aviation**: Flight planning and delay predictions
+
+#### ⚡ **Energy Sector**
+- **Renewable Energy**: Solar/wind power generation forecasting
+- **Grid Stability**: Weather-based load balancing
+- **Maintenance**: Weather-dependent infrastructure maintenance
+- **Demand Response**: Weather-driven energy consumption patterns
+
+</td>
+</tr>
+</table>
+
+
+## 👨‍💻 Author
 
 <div align="center">
 
-### 🌟 *Vishnu Nandan*
+### **Vishnu Nandan**
+*Aspiring Data Scientist | AI & ML Enthusiast*
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/jonnalagaddavishnu">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  <a href="https://www.linkedin.com/in/jonnalagaddavishnu/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="https://github.com/Vishnunandan24"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>
+  <a href="mailto:vishnunandan24@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+</p>
+
+*"Transforming data into insights, one model at a time"*
+
+</div>
+
+## ⭐ Support This Project
+
+<div align="center">
+
+### 🌟 Show Your Support!
+
+If you found this project helpful or interesting, please consider:
+
+<p align="center">
+  <a href="https://github.com/Vishnunandan24/weather-precipitation-classification/stargazers">
+    <img src="https://img.shields.io/github/stars/Vishnunandan24/weather-precipitation-classification?style=social&label=Star&maxAge=2592000" alt="GitHub Stars"/>
   </a>
-  <a href="https://github.com/Vishnunandan24">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  <a href="https://github.com/Vishnunandan24/weather-precipitation-classification/network/members">
+    <img src="https://img.shields.io/github/forks/Vishnunandan24/weather-precipitation-classification?style=social&label=Fork&maxAge=2592000" alt="GitHub Forks"/>
+  </a>
+  <a href="https://github.com/Vishnunandan24/weather-precipitation-classification/watchers">
+    <img src="https://img.shields.io/github/watchers/Vishnunandan24/weather-precipitation-classification?style=social&label=Watch&maxAge=2592000" alt="GitHub Watchers"/>
   </a>
 </p>
 
-### 🎯 *Passion Areas*
-- 📊 *Data Science* & *Analytics*
-- 🤖 *Machine Learning* & *Deep Learning*
+### 💝 Ways to Support
+- ⭐ **Star** this repository
+- 🍴 **Fork** and contribute
+- 🐛 **Report** bugs and issues
+- 📢 **Share** with the community
+- 💡 **Suggest** new features
 
 </div>
 
@@ -267,23 +475,15 @@ streamlit run streamlit_app.py
 
 <div align="center">
 
-### 🌟 *Show Your Support*
+### 💭 *"In a world full of data, smart decisions come from smart models."*
 
-<p align="center">
-  <a href="#">
-    <img src="https://img.shields.io/badge/⭐-Star_this_repo-yellow?style=for-the-badge&logo=star" alt="Star"/>
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/🍴-Fork_this_repo-blue?style=for-the-badge&logo=fork" alt="Fork"/>
-  </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/📖-Read_the_docs-green?style=for-the-badge&logo=book" alt="Docs"/>
-  </a>
-</p>
+<img src="https://forthebadge.com/images/badges/built-with-love.svg"/>
+<img src="https://forthebadge.com/images/badges/made-with-python.svg"/>
+
+**Happy Weather Forecasting! 🌤️**
 
 ---
 
-<h3>💫 "In a world full of data, smart decisions come from smart models." 💫</h3>
-
+*Made with ❤️ by [Vishnu Nandan](https://github.com/Vishnunandan24) | © 2024 Weather Intelligence System*
 
 </div>
