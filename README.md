@@ -137,7 +137,7 @@ graph TB
 <div align="center">
 🌐 Experience the System Live
 <div align="center">
-  <a href="https://m9tqu6hvyyjrub5mesbqrl.streamlit.app/" target="_blank">
+  <a href="https://e2jsej5mcfzgxdxnzazovz.streamlit.app/" target="_blank">
     <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Open in Streamlit"/>
   </a>
 </div>
