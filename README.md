@@ -648,6 +648,6 @@ If you found this project helpful or interesting, please consider:
 
 ---
 
-*Made with ❤️ by [Vishnu Nandan](https://github.com/Vishnunandan24) | © 2024 Weather Intelligence System*
+*Made with ❤️ by [Vishnu Nandan](https://github.com/Vishnunandan24) | © 2025 Weather Intelligence System*
 
 </div>
