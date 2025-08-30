@@ -49,10 +49,10 @@ logging.info("Performing feature engineering...")
 
 weather_data["temp_diff"] = abs(weather_data["Temperature (C)"] - weather_data["Temperature (C)"].rolling(window=3).mean())
 weather_data["humidity_index"] = weather_data["Humidity"] * weather_data["Wind Speed (km/h)"]
-weather_data["rolling_precip_3"] = weather_data["Humidity"].rolling(window=3).mean()
+weather_data["rolling_humidity_3"] = weather_data["Humidity"].rolling(window=3).mean()
 weather_data.fillna(method='bfill', inplace=True)
 
-features = ["Temperature (C)", "Humidity", "Wind Speed (km/h)", "temp_diff", "humidity_index", "rolling_precip_3"]
+features = ["Temperature (C)", "Humidity", "Wind Speed (km/h)", "temp_diff", "humidity_index", "rolling_humidity_3"]
 target = "Precip Type"
 
 # ---------------------- Scaling & Splitting ----------------------
